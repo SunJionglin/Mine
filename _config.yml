@@ -1,0 +1,102 @@
+# ─────────────────────────────────────────────
+# 站点总配置。改站名、作者、网址都在这里
+# 主题的设置在同目录的 _config.reimu.yml
+# ─────────────────────────────────────────────
+
+# 站名和副标题（首页大屏上那几个字）
+title: 清霖
+subtitle: 代码、光、和没写完的念头
+description: 孙炯霖的个人博客：C++、数据结构、随手记。
+keywords: [C++, 数据结构, 笔记]
+author: 孙炯霖
+language: zh-CN
+timezone: Asia/Shanghai
+
+# 发布后的网址（换成你自己的 GitHub Pages 地址）
+url: https://sun-jionglin.github.io
+# 如果站点挂在子路径下（比如 /blog），这里写 /blog，否则留空
+root: /
+permalink: posts/:year/:month/:day/:title/
+permalink_defaults:
+
+# 目录
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# 写作
+new_post_name: :title.md
+default_layout: post
+titlecase: false
+external_link:
+  enable: true
+  field: site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+# 打开后，每篇文章旁边会有一个同名文件夹，图片直接丢进去引用就成
+post_asset_folder: true
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# 首页与分页
+index_generator:
+  path: ''
+  per_page: 8
+  order_by: -date
+
+archive_generator:
+  type: monthly
+  path: archives
+  per_page: 20
+  yearly: true
+  monthly: true
+  daily: false
+  order_by: -date
+
+category_generator:
+  per_page: 10
+  order_by: -date
+
+tag_generator:
+  per_page: 10
+  order_by: -date
+
+# RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content: true
+
+# 主题
+theme: reimu
+
+# 部署：走 GitHub Actions，不用填这里
+deploy:
+  type: ''
+
+# 本地搜索（主题那边 generator_search 打开后要靠它生成 search.json）
+search:
+  path: search.json
+  field: post
+  format: html
+  content: true
