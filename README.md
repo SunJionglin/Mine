@@ -46,15 +46,23 @@ banner: "/images/banner.webp"
 
 头像放在 `source/_data/avatar/avatar.webp`。
 
-## 发到网上
+## 发到网上（你的情况已经配好一半）
 
-1. 在 GitHub 建个仓库（名字随便，比如 `blog`）
-2. 把 `blog/` 里的东西推上去（`node_modules` 和 `public` 别推，`.gitignore` 已经挡了）
-3. 仓库 Settings → Pages → Source 选 **GitHub Actions**
-4. 推上去之后那边自动构建，几分钟后网址就有了
-5. 回到 `_config.yml` 把 `url:` 改成你的真实网址，再推一次
+仓库名建议就用 **SunJionglin.github.io**，这样网址最干净：`https://sunjionglin.github.io`
 
-仓库名如果就叫 `<你的用户名>.github.io`，网址就是 `https://<用户名>.github.io`，最干净。
+```bash
+# 1. 在 GitHub 上建仓库 SunJionglin.github.io（不要勾 README）
+# 2. 把本地推上去
+git remote add origin https://github.com/SunJionglin/SunJionglin.github.io.git
+git branch -M main
+git push -u origin main
+```
+
+3. 仓库 → Settings → Pages → Source 选 **GitHub Actions**
+4. 等 Actions 跑完（两三分钟），网址就有了
+5. 以后写完文章：`git add -A && git commit -m "新文章" && git push`，自动发布
+
+`_config.yml` 里的 `url` 已经是 `https://sunjionglin.github.io`，仓库名照上面起就不用改。
 
 ## 目录速查
 

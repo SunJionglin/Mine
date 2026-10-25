@@ -17,7 +17,7 @@ C++、数据结构、刷题时踩的坑，偶尔也放点生活里的事。
 
 ## 找得到我
 
-- GitHub：[yourname](https://github.com/yourname)
+- GitHub：[SunJionglin](https://github.com/SunJionglin)
 - QQ：1002991974
 
 > 本站文字除特别注明外均为原创，转载说一声就好。

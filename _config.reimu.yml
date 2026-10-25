@@ -124,7 +124,7 @@ sidebar:
     show_common: true # whether to show common sidebar, ignored on mobile devices
 
 social:
-  # github: https://github.com/yourname
+  github: https://github.com/SunJionglin
   # email: mailto:you@example.com
   # bilibili: https://space.bilibili.com/yourname
   # github: https://github.com/yourname
