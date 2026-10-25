@@ -14,8 +14,8 @@ timezone: Asia/Shanghai
 
 # 发布后的网址（换成你自己的 GitHub Pages 地址）
 url: https://sunjionglin.github.io
-# 如果站点挂在子路径下（比如 /blog），这里写 /blog，否则留空
-root: /
+# 仓库叫 Mine，所以站点挂在 /Mine/ 下
+root: /Mine/
 permalink: posts/:year/:month/:day/:title/
 permalink_defaults:
 

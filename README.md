@@ -48,12 +48,12 @@ banner: "/images/banner.webp"
 
 ## 发到网上（你的情况已经配好一半）
 
-仓库名建议就用 **SunJionglin.github.io**，这样网址最干净：`https://sunjionglin.github.io`
+仓库叫 **Mine**，网址就是 `https://sunjionglin.github.io/Mine/`
 
 ```bash
-# 1. 在 GitHub 上建仓库 SunJionglin.github.io（不要勾 README）
+# 1. 仓库 Mine 已经在 GitHub 上了
 # 2. 把本地推上去
-git remote add origin https://github.com/SunJionglin/SunJionglin.github.io.git
+git remote add origin https://github.com/SunJionglin/Mine.git
 git branch -M main
 git push -u origin main
 ```
@@ -62,7 +62,9 @@ git push -u origin main
 4. 等 Actions 跑完（两三分钟），网址就有了
 5. 以后写完文章：`git add -A && git commit -m "新文章" && git push`，自动发布
 
-`_config.yml` 里的 `url` 已经是 `https://sunjionglin.github.io`，仓库名照上面起就不用改。
+`_config.yml` 里 `url` 是 `https://sunjionglin.github.io`、`root` 是 `/Mine/`，跟仓库名对得上。
+
+本地预览要开 <http://localhost:4000/Mine/>，因为路径前缀是 /Mine/。
 
 ## 目录速查
 
